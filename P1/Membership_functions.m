@@ -1,0 +1,13 @@
+figure(1)
+bell(40, 20, 0)
+sigmoide(0.1,140)
+gaussian(100,25)
+legend({'Bell','Sigmoid','Gaussian'},'Location','northeast')
+title('Continous Membership Functions')
+
+figure(2)
+triangular(0,50,100,150,200,0.5)
+trapezoidal(0,0,0,45,80,200,0.5)
+trapezoidal(0,120,155,200,200,200,0.5)
+legend({'triangular','T1','T2'},'Location','northeast')
+title('Discrete Membership Functions')

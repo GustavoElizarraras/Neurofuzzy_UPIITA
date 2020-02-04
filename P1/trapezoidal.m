@@ -1,9 +1,9 @@
 function[X,Y] = trapezoidal(start, a, b, c, d, endlich, step)
-X=start:step:endlich;
+X=start+0.1:step:endlich;
 Y=zeros(1,endlich);
     for pos = 1:length(X)
         
-        if (X(pos)<=a)
+        if ( X(pos) <= a )
         Y(pos)=0;
        
         elseif ((a < X(pos)) && (X(pos) <= b))
@@ -22,5 +22,7 @@ Y=zeros(1,endlich);
               
     end   
     
-plot(X,Y)
+p=plot(X,Y,'Linewidth', 2);
+
+hold on
 end

@@ -19,7 +19,7 @@ Y=zeros(1,endlich);
         disp('TERCER if')
         disp(X(pos))
         
-        elseif ( c<X(pos) )
+        elseif ( c < X(pos) )
         Y(pos)=0; 
         disp('CUARTO if')  
         disp(X(pos))
@@ -28,5 +28,7 @@ Y=zeros(1,endlich);
               
     end   
     
-plot(X,Y)
+p=plot(X,Y, 'Linewidth',0.1);
+p.Marker='*';
+hold on
 end
