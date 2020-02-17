@@ -10,7 +10,7 @@ A1value=0;
 A2value=0;
 B1value=0;
 B2value=0;
-
+Cvalue=0;
 
 %Generando funciones
     for i = 1:length(X)
