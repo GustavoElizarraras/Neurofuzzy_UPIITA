@@ -47,21 +47,25 @@ y = -b / W(2);
 [X, Y] = meshgrid(-3:1:3);
 % Isolating z
 Z = (1/W(3))*(-W(1)*X - W(2)*Y + W(2)*y);
+z = (1/W(3))*(W(1)*X + W(2)*Y + W(2)*y);
+grid on
 surf(X,Y,Z)
 hold on
-% Image example
-userx = input('Introduce the x point')
-usery = input('Introduce the y point')
-userz = input('Introduce the z point')
-scatter3(userx,usery,userz)
-legend({'Orange','Apple','Dividing plane','User input'},'Location','northeast')
-U = [userx; usery; userz];
-C = hardlim(W*U + b);      
-figure(2)
-    if C==1
-       imshow('apple.png')
-    else
-       imshow('orange.jpg') 
-    end
+surf(X,Y,z,'FaceAlpha',0.5)
+hold on
+% % Image example
+% userx = input('Introduce the x point')
+% usery = input('Introduce the y point')
+% userz = input('Introduce the z point')
+% scatter3(userx,usery,userz)
+legend({'Orange','Apple','Dividing plane','weight'},'Location','northeast')
+% U = [userx; usery; userz];
+% C = hardlim(W*U + b);      
+% figure(2)
+%     if C==1
+%        imshow('apple.png')
+%     else
+%        imshow('orange.jpg') 
+%     end
 
 
