@@ -1,0 +1,34 @@
+[W11, W12, b11, b12] = training(0.0000012, 1500, num_test, P, W1, W2, b1, b2, t, F);
+[W21, W22, b21, b22] = training(0.0000013, 1700, num_test, P, W1, W2, b1, b2, t, F);
+[W31, W32, b31, b32] = training(0.0000014, 1400, num_test, P, W1, W2, b1, b2, t, F);
+[W41, W42, b41, b42] = training(0.0000015, 1300, num_test, P, W1, W2, b1, b2, t, F);
+[W51, W52, b51, b52] = training(0.0000016, 1950, num_test, P, W1, W2, b1, b2, t, F);
+[W61, W62, b61, b62] = training(0.0000017, 1850, num_test, P, W1, W2, b1, b2, t, F);
+
+
+
+VALORES EXTREMOS NEGATIVOS Y CERCANOS A POSITIVOS
+[W11, W12, b11, b12] = training(0.000012, 9500, num_test, P, W1, W2, b1, b2, t, F);
+[W21, W22, b21, b22] = training(0.000013, 9700, num_test, P, W1, W2, b1, b2, t, F);
+[W31, W32, b31, b32] = training(0.000014, 9400, num_test, P, W1, W2, b1, b2, t, F);
+[W41, W42, b41, b42] = training(0.000015, 9300, num_test, P, W1, W2, b1, b2, t, F);
+[W51, W52, b51, b52] = training(0.000016, 9950, num_test, P, W1, W2, b1, b2, t, F);
+[W61, W62, b61, b62] = training(0.000017, 9850, num_test, P, W1, W2, b1, b2, t, F);
+
+
+BUENOS RESULTADOS
+[W11, W12, b11, b12] = training(0.000002, 1400, num_test, P, W1, W2, b1, b2, t, F);
+[W21, W22, b21, b22] = training(0.000004, 1300, num_test, P, W1, W2, b1, b2, t, F);
+[W31, W32, b31, b32] = training(0.0000054, 1600, num_test, P, W1, W2, b1, b2, t, F);
+[W41, W42, b41, b42] = training(0.0000055, 1000, num_test, P, W1, W2, b1, b2, t, F);
+[W51, W52, b51, b52] = training(0.0000091, 1800, num_test, P, W1, W2, b1, b2, t, F);
+[W61, W62, b61, b62] = training(0.00000577, 2055, num_test, P, W1, W2, b1, b2, t, F);
+[W71, W72, b71, b72] = training(0.000001, 2750, num_test, P, W1, W2, b1, b2, t, F);
+[W81, W82, b81, b82] = training(0.0005, 1000, num_test, P, W1, W2, b1, b2, t, F);
+
+
+
+
+[W11, W12, b11, b12] = training(0.0000001, 12000, num_test, P, W1, W2, b1, b2, t, F);
+[W21, W22, b21, b22] = training(0.0000001, 13500, num_test, P, W1, W2, b1, b2, t, F);
+[W31, W32, b31, b32] = training(0.0000001, 14000, num_test, P, W1, W2, b1, b2, t, F);
